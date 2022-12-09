@@ -25,14 +25,6 @@ const Progress = ({ activeStep }) => {
     },
   ];
 
-  const stepStyles = {
-    boxSizing: "border-box",
-    width:"50%",
-    alignItems: "center",
-    justifyContent: "center",
-    marginleft: "20%"
-    
-  };
 
   return (
     <>
