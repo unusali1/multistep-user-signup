@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Progress from './Progress';
 
 const AccountStep = () => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ const AccountStep = () => {
   };
   return (
     <div className='App' >
+      <Progress activeStep={0} />
       <div className="mx-2 w-full flex-1">
        <label className="inputfiledlebel">Email:*</label>
         <div >

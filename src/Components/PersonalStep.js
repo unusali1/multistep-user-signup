@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Progress from './Progress';
 
 const PersonalStep = () => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const PersonalStep = () => {
   }
   return (
     <div className='App'>
+      <Progress activeStep={1} /> 
       <div className="inputcontainer">
         <label className="firstnamelabel">First Name:*</label>
         <div >

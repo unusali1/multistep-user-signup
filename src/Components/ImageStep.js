@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Progress from './Progress';
 
 const ImageStep = () => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const ImageStep = () => {
   }
   return (
     <div className='App'>
+      <Progress activeStep={2} />
     <div className="inputcontainer">
         <label className="imagelabel">Upload Your Photo:</label>
         <div>
