@@ -5,8 +5,8 @@ import { multistepContext } from '../StepContext'
 
 const AccountStep = () => {
   const navigate = useNavigate();
-  const { setStep, userData, setUserData } = useContext(multistepContext)
-  const { currentStep } = useContext(multistepContext);
+  const { setStep,userData,setUserData} = useContext(multistepContext)
+  const {currentStep}= useContext(multistepContext);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -17,21 +17,21 @@ const AccountStep = () => {
       <Progress activeStep={0} />
       <div className="progressbar">
         <div
-          style={{ width: currentStep === 1 ? "25%" : "50%" }}
+          style={{ width: currentStep=== 1 ? "25%" : "50%"  }}
         ></div>
-        <section className='step'>
-          <h5>Account Information :</h5>
-          <p>step: {setStep(1)}1 - 4</p>
-
-        </section>
+       <section className='step'>
+       <h5>Account Information :</h5>
+       <p>step: {setStep(1)}1 - 4</p>
+      
+       </section>
       </div>
-      <div className="mx-2 w-full flex-1">
-        <label className="inputfiledlebel">Email:*</label>
+      <div>
+       <label className="inputfiledlebel">Email:*</label>
         <div >
-
+          
           <input
             type="email"
-            onChange={(e) => setUserData({ ...userData, "email": e.target.value })}
+            onChange={(e)=>setUserData({...userData, "email" : e.target.value})}
             value={userData["email"]}
             name="email"
             placeholder="Email Id"
@@ -42,11 +42,11 @@ const AccountStep = () => {
         </div>
       </div>
       <div className="inputcontainer">
-        <label className="namelebel">UserName:*</label>
+      <label className="namelebel">UserName:*</label>
         <div>
           <input
-            onChange={(e) => setUserData({ ...userData, "username": e.target.value })}
-            value={userData["username"]}
+          onChange={(e)=>setUserData({...userData, "username" : e.target.value})}
+          value={userData["username"]}
             name="username"
             placeholder="Username"
             pattern="([A-Z])[\w+.]{1,}"
@@ -56,11 +56,11 @@ const AccountStep = () => {
         </div>
       </div>
       <div className="inputcontainer">
-        <label className="passwordlabel">Password:*</label>
+      <label className="passwordlabel">Password:*</label>
         <div>
           <input
-            onChange={(e) => setUserData({ ...userData, "password": e.target.value })}
-            value={userData["password"]}
+          onChange={(e)=>setUserData({...userData, "password" : e.target.value})}
+          value={userData["password"]}
             name="password"
             placeholder="Password"
             type="password"
@@ -70,12 +70,12 @@ const AccountStep = () => {
         </div>
       </div>
       <div className="inputcontainer">
-        <label className="confirmlebel">Confirm Password:*</label>
+      <label className="confirmlebel">Confirm Password:*</label>
         <div >
           <input
-            onChange={(e) => setUserData({ ...userData, "confirmpassword": e.target.value })}
-            value={userData["confirmpassword"] || ""}
-            name="confirmpassword"
+          onChange={(e)=>setUserData({...userData, "confirmpassword" : e.target.value})}
+          value={userData["confirmpassword"] || ""}
+           name="confirmpassword"
             placeholder="Confirm Password"
             type="password"
             className="inputfield"
@@ -83,10 +83,10 @@ const AccountStep = () => {
           />
         </div>
       </div>
-
-      <div className='inputcontainer'>
-        <button className='next-btn' onClick={handleChange}  >Next</button>
-      </div>
+      
+       <div className='inputcontainer'>
+       <button className='next-btn' onClick={handleChange}  >Next</button>
+       </div>    
     </div>
   )
 }

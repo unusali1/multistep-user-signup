@@ -22,7 +22,7 @@ const ImageStep = () => {
         ></div>
         <section className='step'>
           <h5>Image Upload :</h5>
-          <p>step: {setStep(1)}1 - 4</p>
+          <p>step: {setStep(1)}3 - 4</p>
 
         </section>
       </div>

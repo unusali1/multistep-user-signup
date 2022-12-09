@@ -9,19 +9,19 @@ const Progress = ({ activeStep }) => {
   const steps = [
     {
       label: <Typography>Account</Typography>,
-      icon: <LockOpenRoundedIcon  />,
+      icon: <LockOpenRoundedIcon className="icon"  />,
     },
     {
       label: <Typography>Personal</Typography>,
-      icon: <AccountCircleRoundedIcon />,
+      icon: <AccountCircleRoundedIcon className="icon" />,
     },
     {
       label: <Typography>Image</Typography>,
-      icon: <CameraAltRoundedIcon />,
+      icon: <CameraAltRoundedIcon className="icon" />,
     },
     {
       label: <Typography>Finish</Typography>,
-      icon: <CheckCircleOutlineRoundedIcon />,
+      icon: <CheckCircleOutlineRoundedIcon  className="icon"/>,
     },
   ];
 
@@ -36,10 +36,10 @@ const Progress = ({ activeStep }) => {
             completed={activeStep >= index ? true : false}
            
           >
+            
             <StepLabel
               style={{
                 color: activeStep >= index ? "rgb(23, 223, 57)" : "rgba(0, 0, 0, 0.649)",
-                  
               }}
               icon={item.icon }
             >

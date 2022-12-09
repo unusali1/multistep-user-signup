@@ -14,7 +14,7 @@ const FinishStep = () => {
         ></div>
        <section className='step'>
        <h5>Finish :</h5>
-       <p>step: {setStep(1)}1 - 4</p>
+       <p>step: {setStep(1)}4 - 4</p>
       
        </section>
       </div>
