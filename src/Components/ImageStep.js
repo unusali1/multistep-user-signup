@@ -1,11 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const ImageStep = () => {
+  const navigate = useNavigate();
+  const handleChange = () => {
+    navigate("/finishStep")
+  }
+  const handleBack = () => {
+    navigate("/personalStep")
+  }
   return (
     <div className='App'>
-
-
-      <div className="inputcontainer">
+    <div className="inputcontainer">
         <label className="imagelabel">Upload Your Photo:</label>
         <div>
           <input
@@ -30,10 +36,10 @@ const ImageStep = () => {
       </div>
 
       <div className='inputcontainer'>
-        <button className='next-btn' >Submit</button>
+        <button className='next-btn' onClick={handleChange} >Submit</button>
       </div>
       <div className='inputcontainer' >
-        <button className='previous-btn'  >Previous</button>
+        <button className='previous-btn' onClick={handleBack} >Previous</button>
       </div>
 
 

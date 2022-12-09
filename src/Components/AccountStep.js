@@ -1,6 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const AccountStep = () => {
+  const navigate = useNavigate();
+  const handleChange = (e) => {
+    e.preventDefault();
+    navigate("/personalStep");
+  };
   return (
     <div className='App' >
       <div className="mx-2 w-full flex-1">
@@ -55,7 +61,7 @@ const AccountStep = () => {
       </div>
       
        <div className='inputcontainer'>
-       <button className='next-btn'  >Next</button>
+       <button className='next-btn' onClick={handleChange}  >Next</button>
        </div>    
     </div>
   )

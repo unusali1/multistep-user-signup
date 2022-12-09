@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const PersonalStep = () => {
+  const navigate = useNavigate();
+  const handleChange = () => {
+    navigate("/imageStep")
+  }
+  const handleBack = () => {
+    navigate("/")
+  }
   return (
     <div className='App'>
       <div className="inputcontainer">
@@ -57,10 +65,10 @@ const PersonalStep = () => {
 
       <div className='inputcontainer'>
 
-        <button className='next-btn' >Next</button>
+        <button className='next-btn' onClick={handleChange} >Next</button>
       </div>
       <div className='inputcontainer' >
-        <button className='previous-btn'  >Previous</button>
+        <button className='previous-btn' onClick={handleBack} >Previous</button>
       </div>
     </div>
   )
