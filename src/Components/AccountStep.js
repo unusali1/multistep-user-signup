@@ -19,7 +19,7 @@ const AccountStep = () => {
       </div>
       <div className="inputcontainer">
       <label className="namelebel">UserName:*</label>
-        <div className="my-2 flex rounded border border-gray-200 bg-white p-1">
+        <div>
           <input
             name="username"
             placeholder="Username"
@@ -31,7 +31,7 @@ const AccountStep = () => {
       </div>
       <div className="inputcontainer">
       <label className="passwordlabel">Password:*</label>
-        <div className="my-2 flex rounded border border-gray-200 bg-white p-1">
+        <div>
           <input
             name="password"
             placeholder="Password"
@@ -43,7 +43,7 @@ const AccountStep = () => {
       </div>
       <div className="inputcontainer">
       <label className="confirmlebel">Confirm Password:*</label>
-        <div className="my-2 flex rounded border border-gray-200 bg-white p-1">
+        <div >
           <input
            name="confirmpassword"
             placeholder="Confirm Password"
@@ -55,7 +55,7 @@ const AccountStep = () => {
       </div>
       
        <div className='inputcontainer'>
-       <button className='btn'  >Next</button>
+       <button className='next-btn'  >Next</button>
        </div>    
     </div>
   )

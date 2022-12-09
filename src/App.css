@@ -28,7 +28,7 @@
   margin-top: 5px;
  }
 
- .btn{
+ .next-btn{
   width: 85%;
   height: 25px;
   padding: 2px;
@@ -37,9 +37,34 @@
   border-radius: 5px;
   padding: 5px;
  }
- .btn:hover{
+ .next-btn:hover{
   background-color: rgb(23, 223, 57);
   border: none;
   border-radius: 5px;
   color: white;
+ }
+
+ .previous-btn{
+  width: 85%;
+  height: 25px;
+  padding: 2px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+ }
+ .previous-btn:hover{
+  background-color: rgb(14, 15, 15);
+  border: none;
+  border-radius: 5px;
+  color: white;
+ }
+ .firstnamelabel{
+  margin-right: 545px;
+ }
+ .contactlabel{
+  margin-right: 540px;
+ }
+ .altercontact{
+  margin-right: 460px;
  }
